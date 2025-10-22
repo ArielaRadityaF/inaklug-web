@@ -14,10 +14,8 @@
     </div>
 </section>
 
-<!-- Tentang Kami Section -->
 <section class="about-section py-5">
     <div class="container">
-        <!-- Profil -->
         <div class="about-profil mb-5">
             <h3 class="section-title">Profil</h3>
             <p>
@@ -26,8 +24,6 @@
                 anak-anak muda Indonesia untuk menuntut ilmu di berbagai negara maju dunia.
             </p>
         </div>
-
-        <!-- Visi & Misi -->
         <div class="row g-4">
             <div class="col-md-6">
                 <div class="about-card p-3">
@@ -40,7 +36,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="col-md-6">
                 <div class="about-card p-3">
                     <img src="/images/misi.png" class="img-fluid rounded mb-3" alt="Misi">
@@ -56,8 +51,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Tombol -->
         <div class="text-center mt-5">
             <a href="/layanankami" class="btn-gradient">Layanan Kami</a>
         </div>

@@ -1,14 +1,11 @@
-/* ============================= */
-/* HERO SECTION - TENTANG KAMI */
-/* ============================= */
 .hero-section {
     position: relative;
     height: 60vh;
-    background-image: url('/images/studytour.png'); /* ganti path gambarnya */
+    background-image: url('/images/studytour.png'); 
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: flex-end; /* posisi ke bawah */
+    align-items: flex-end; 
     color: white;
 }
 
@@ -17,8 +14,8 @@
     inset: 0;
     background: linear-gradient(
         to right,
-        rgba(70, 7, 78, 0.9),  /* #46074E dengan 80% opacity */
-        rgba(25, 123, 208, 0)  /* #197BD0 dengan 0% opacity */
+        rgba(70, 7, 78, 0.9), 
+        rgba(25, 123, 208, 0) 
     );
     display: flex;
     align-items: flex-end;
@@ -31,8 +28,6 @@
     padding: 7rem 4.5rem;
 }
 
-
-
 .hero-title {
     font-size: 28px;
     font-weight: 500;
@@ -41,8 +36,6 @@
     margin: 0;
 }
 
-
-/* ============================= */
 .about-section {
     background-color: #fff;
     color: #333;
@@ -95,8 +88,8 @@
 }
 
 .row.g-4 {
-    --bs-gutter-x: 0rem; /* Atur jarak antar kolom (default Bootstrap) */
-    --bs-gutter-y: 1rem; /* Bisa dikurangi jadi lebih rapat antar baris */
+    --bs-gutter-x: 0rem; 
+    --bs-gutter-y: 1rem;
 }
 
 .btn-gradient {

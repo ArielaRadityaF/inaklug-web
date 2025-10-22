@@ -11,9 +11,9 @@
 }
 
 .navbar-logo {
-    height: 35px;          /* atur tinggi logo */
-    width: auto;           /* biar proporsional */
-    border-radius: 50%;    /* kalau logomu bulat seperti di screenshot */
+    height: 35px;     
+    width: auto;           
+    border-radius: 50%;    
 }
 
 
@@ -21,17 +21,17 @@
 .navbar {
   background: linear-gradient(90deg, rgba(70, 7, 78, 1), rgba(25, 123, 208, 0.8));
   padding: 18px 30px;
-  position: fixed;     /* ✅ ini membuat navbar tetap di atas */
-  top: 0;              /* ✅ posisinya di paling atas */
+  position: fixed;     
+  top: 0;             
   left: 0;
-  width: 100%;         /* ✅ lebar penuh */
-  z-index: 1000;       /* ✅ agar tidak tertimpa elemen lain */
+  width: 100%;         
+  z-index: 1000;       
 }
 
 .navbar-nav .nav-link {
     position: relative;
     transition: color 0.3s ease;
-    padding-bottom: 5px; /* beri ruang sedikit untuk garis */
+    padding-bottom: 5px; 
 }
 
 .navbar-nav .nav-link.active::after {
@@ -41,18 +41,12 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: rgba(25, 255, 255, 0.4); /* warna garis */
+    background-color: rgba(25, 255, 255, 0.4); 
     border-radius: 2px;
 }
 
-
-/* Atur jarak antar item navbar */
-/* .navbar-nav .nav-item {
-    margin: 0 10px !important; /* memberi jarak horizontal antar item */
-/* } */ */
-
 .navbar-nav {
-    margin-left: 2rem;   /* geser menu lebih ke kanan */
+    margin-left: 2rem;  
 }
 
 
@@ -60,7 +54,7 @@
     color: #ffffffcc !important;
     font-weight: 400;
     transition: all 0.3s;
-    padding: 0.5rem 1rem 0.5rem!important; /* jarak dalam setiap item */
+    padding: 0.5rem 1rem 0.5rem!important;
 }
 
 body {
@@ -120,7 +114,7 @@ body {
     color: rgba(255, 255, 255, 0.4);
     outline: none;
     width: 200px;
-    padding-left: 45px; /* ruang untuk ikon */
+    padding-left: 45px; 
     transition: all 0.3s ease;
     font-weight: 100;
     padding-top: 0.8rem;
@@ -140,23 +134,23 @@ body {
 
 /* Tombol daftar */
 .daftar-btn {
-    background: #195395; /* warna utama tombol */
+    background: #195395; 
     color: #fff;
     border: none;
-    border-radius: 50px; /* membuat tombol oval */
-    padding: 0.68rem 1.5rem; /* atas-bawah | kiri-kanan */
+    border-radius: 50px; 
+    padding: 0.68rem 1.5rem;
     font-weight: 300 !important;
     font-size: 13px;
     transition: all 0.3s ease;
-    margin-left: 1.5rem; /* jarak antara tombol dan search bar */
+    margin-left: 1.5rem; 
     margin-right: 4rem;
 }
 
 /* Efek hover (ketika cursor diarahkan ke tombol) */
 .daftar-btn:hover {
-    background: #0d5da3; /* lebih gelap sedikit dari warna asli */
+    background: #0d5da3; 
     color: #fff;
-    transform: translateY(-1px); /* efek sedikit terangkat */
+    transform: translateY(-1px);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 

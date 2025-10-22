@@ -23,10 +23,8 @@
   </div>
 </section>
 
-<!-- Garis Pemisah -->
 <hr class="section-divider">
 
-<!-- Section Layanan Kami -->
 <section id="layanan-kami" class="services-section py-5">
   <div class="container text-center">
     <h2 class="services-title mb-5">LAYANAN KAMI</h2>
