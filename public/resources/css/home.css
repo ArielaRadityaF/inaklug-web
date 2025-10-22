@@ -1,0 +1,554 @@
+/* ---------------------------------- */
+/*            NAVBAR STYLE            */
+/* ---------------------------------- */
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('/images/gedung.png') no-repeat center center/cover; 
+}
+
+/* Overlay transparan di atas gambar */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start; /* kiri */
+  align-items: flex-end; /* bawah */
+  padding: 92px 95px; /* jarak dari tepi bawah dan kiri */
+  box-sizing: border-box;
+  margin-left: 26px;
+}
+
+/* Box teks di kiri bawah */
+.hero-box {
+  background: linear-gradient(90deg, rgba(70, 7, 78, 1) 0%, rgba(25, 123, 208, 0.8) 80%);
+  padding: 30px 50px;
+  color: white;
+  max-width: 655px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Teks dalam box */
+.hero-box h2 {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 30px;
+}
+
+/* Tombol */
+.btn-hero {
+  display: inline-block;
+  padding: 10px 35px;
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  transition: 0.3s;
+  font-size: 16px;
+  white-space: nowrap; /* biar gak pindah ke bawah */
+}
+
+.btn-hero i{
+  margin-left: 6px;              /* jarak antara teks dan ikon */
+  transition: transform 0.3s;
+}
+
+.btn-hero:hover {
+  background: white;
+  color: #46074E;
+}
+
+/* === Section Tentang Kami === */
+.about-section {
+  background-color: #fff;
+  color: #444;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 35px;
+}
+
+.about-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 19px;
+  line-height: 30px;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #555;
+  justify-content: center;
+  font-weight: 390;
+  margin-bottom: 23px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
+
+/* === Garis Pemisah === */
+.section-divider {
+  border: none;
+  border-top: 1px solid #6b6464;
+  margin: 10px auto;
+  width: 85%;
+}
+
+/* === Section Layanan Kami === */
+.services-section {
+  background-color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 80px 135px;
+}
+
+.services-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 50px;
+  justify-content: center ;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  position: relative;
+  height: 270px;
+  width: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(70, 7, 78, 0.8) 0%,  /* #46074E dengan 70% transparansi */
+    rgba(25, 123, 208, 0.2) 35%, /* #197BD0 dengan 70% transparansi */
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.service-card p {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.hero-box::before {
+  content: "";
+  position: absolute;
+  left: 8.7%;
+  bottom: 120px;
+  width: 1px; /* ketebalan garis */
+  height: 20%; /* panjang garis, bisa diatur */
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 3;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  bottom: 70px;
+  width: 1px; /* ketebalan garis */
+  height: 100%; /* panjang garis, bisa diatur */
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 24px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+  }
+}
+
+.mitra-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  font-weight: 500; /* ubah sesuai keinginan: 300, 400, 500, 700 */
+  text-transform: none;
+  color: #4A4A4A; /* opsional */
+  margin-bottom: 50px;
+}
+
+
+.mitra-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.mitra-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mitra-grid img {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  padding: 10px;
+}
+
+.banner-section {
+  margin: 60px auto;
+  height: 110px;
+  max-width: 1100px;
+  background: linear-gradient(90deg, rgba(70, 7, 78, 1) 0%, rgba(25, 123, 208, 0.8) 80%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between; /* teks kiri, tombol kanan */
+  align-items: center;
+  padding: 0 40px; /* sedikit padding kiri-kanan */
+  color: white;
+}
+
+.banner-text h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.banner-text p {
+  opacity: 0.9;
+  margin: 0;
+  font-weight: 300;
+}
+
+.btn-banner {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 26px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: auto; /* dorong tombol ke kanan */
+}
+
+.btn-banner i{
+  margin-left: 6px;              /* jarak antara teks dan ikon */
+  transition: transform 0.3s;
+}
+
+.btn-banner:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* === Section === */
+.artikel-section {
+  text-align: center;
+  margin: 110px auto;
+  max-width: 750px;
+}
+
+.artikel-section h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #4A4A4A;
+  margin-bottom: 60px;
+}
+
+/* === Grid 2x2 di desktop, 1 kolom di HP === */
+.artikel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .artikel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.artikel-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px; /* biar tidak terlalu lebar */
+  margin: 0 auto;
+}
+
+.artikel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.artikel-card img {
+  width: 100%;
+  height: 210px; /* tinggi seperti di screenshot */
+  object-fit: cover;
+  display: block;
+}
+
+.artikel-card p {
+  font-size: 18px;
+  color: #4A4A4A;
+  font-weight: 400;
+  margin: 20px;
+  line-height: 24px;
+}
+
+
+/* === Tombol "LAINNYA" === */
+.artikel-btn-container {
+  margin-top: 50px;
+}
+
+.btn-artikel {
+  background: transparent;
+  border: 1.8px solid #3b82f6;
+  color: #3b82f6;
+  border-radius: 50px;
+  padding: 8px 26px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-artikel:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #444;
+}
+
+.contact-section h2 {
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #4A4A4A;
+}
+
+.contact-section h4 {
+  font-weight: 500;
+  color: #4A4A4A;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-weight: 400;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, rgba(70, 7, 78, 0.8) 0%, rgba(25, 123, 208, 0.8) 80%);
+  color: #FFFFFF;
+  padding: 9px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 8px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 50px 20px;
+    margin-left: 0;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hero-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 25px;
+    height: auto;
+    width: 90%;
+  }
+
+  .hero-box h2 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .btn-hero {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-section {
+    padding: 60px 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+    height: auto;
+    padding: 25px;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .btn-banner {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .artikel-section {
+    margin: 70px 15px;
+  }
+
+  .artikel-card p {
+    font-size: 16px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 22px;
+  }
+
+  .contact-section h4 {
+    font-size: 18px;
+  }
+
+  .contact-section p {
+    font-size: 15px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-gradient,
+  .btn-outline {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

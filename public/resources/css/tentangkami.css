@@ -1,0 +1,195 @@
+/* ============================= */
+/* HERO SECTION - TENTANG KAMI */
+/* ============================= */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    background-image: url('/images/studytour.png'); /* ganti path gambarnya */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end; /* posisi ke bawah */
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(70, 7, 78, 0.9),  /* #46074E dengan 80% opacity */
+        rgba(25, 123, 208, 0)  /* #197BD0 dengan 0% opacity */
+    );
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+
+.hero-overlay .container {
+    padding: 7rem 4.5rem;
+}
+
+
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+
+/* ============================= */
+.about-section {
+    background-color: #fff;
+    color: #333;
+    max-width: 78%;
+    margin-left: 11%;
+}
+
+.about-profil h3{
+  font-size: 26px;
+  color: #4A4A4A;
+  font-weight: 500;
+}
+
+.about-profil{
+  margin-left: 16px;
+  margin-top: 22px;
+  max-width: 90%;
+}
+
+.about-profil p{
+  font-size: 17px;
+  color: #4A4A4A;
+  font-weight: 300;
+}
+
+.about-card p{
+  font-size: 17px;
+  font-weight: 300;
+  color: #4A4A4A;
+}
+
+.about-card h3{
+  color: #4A4A4A;
+  font-size: 26px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.about-card {
+    background: #fff;
+}
+
+.about-card img {
+    padding-bottom: 3rem;
+}
+
+.row.g-4 {
+    --bs-gutter-x: 0rem; /* Atur jarak antar kolom (default Bootstrap) */
+    --bs-gutter-y: 1rem; /* Bisa dikurangi jadi lebih rapat antar baris */
+}
+
+.btn-gradient {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 10px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #6b6464;
+  margin: 10px auto;
+  width: 85%;
+  margin-top: 35px;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #444;
+}
+
+.contact-section h2 {
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #4A4A4A;
+}
+
+.contact-section h4 {
+  font-weight: 500;
+  color: #4A4A4A;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-weight: 400;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-gradientt {
+  background: linear-gradient(90deg, rgba(70, 7, 78, 0.8) 0%, rgba(25, 123, 208, 0.8) 80%);
+  color: #FFFFFF;
+  padding: 9px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-gradientt:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 8px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
