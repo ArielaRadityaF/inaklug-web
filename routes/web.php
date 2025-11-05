@@ -18,6 +18,10 @@ Route::get('/artikel', function () {
     return view('artikel');
 });
 
-Route::get('/hubungi', function () {
-    return view('hubungi');
+Route::get('/hubungikami', function () {
+    return view('hubungikami');
 });
+
+use App\Http\Controllers\HubungiKamiController;
+
+Route::post('/hubungikami', [HubungiKamiController::class, 'kirimPesan'])->name('hubungi.kami.kirim');

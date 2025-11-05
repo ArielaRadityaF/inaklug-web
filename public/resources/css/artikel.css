@@ -1,0 +1,306 @@
+.hero-artikel {
+  position: relative;
+  height: 53vh;
+  background-image: url('/images/heroartikel.jpeg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.hero-artikel .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(70, 7, 78, 0.8) 0%, 
+    rgba(25, 123, 208, 0) 50%, 
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+}
+
+.hero-artikel .hero-content {
+  position: relative;
+  color: white;
+  max-width: 700px;
+  margin-left: 18%;
+  margin-bottom: 0;
+}
+
+.hero-artikel .hero-category {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.hero-artikel .hero-title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-artikel {
+    height: 45vh;
+  }
+  .hero-artikel .hero-title {
+    font-size: 1.2rem;
+  }
+  .hero-artikel .hero-overlay {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.artikel-list {
+  margin-top: 4.6rem;
+  background-color: #fff;
+}
+
+.artikel-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0; 
+}
+
+.artikel-card {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 380px;
+  margin: 0 8px 16px 8px; 
+  box-sizing: border-box;
+}
+
+.artikel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.artikel-image {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+.artikel-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #444;
+  margin: 0.8rem 0 1rem;
+  padding: 0 0.8rem;
+  line-height: 1.4;
+}
+
+/* === Garis Pemisah === */
+.section-divider {
+  border: none;
+  border-top: 1px solid #6b6464;
+  margin: 25px auto;
+  width: 63%;
+}
+
+.mitra-section {
+  padding: 10px 21%;
+  background: #fff;
+  max-width: 96%;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-left: 2%;
+  color: #4A4A4A;
+}
+
+.mitra-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.mitra-card img {
+  width: 240px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 7px;
+  margin: 0 15px;
+}
+
+.mitra-content {
+  flex: 1;
+  padding-right: 20px;
+  padding-bottom: 34px;
+  margin-left: 22px;
+}
+
+.mitra-content h3 {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #4A4A4A;
+  margin-bottom: 4px;
+}
+
+.mitra-content p {
+  font-size: 12px;
+  color: #AEAEAE;
+  font-weight: 500;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .mitra-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mitra-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .mitra-content {
+    padding: 15px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; 
+  margin-top: 30px;
+}
+
+.page-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: #ddd;
+}
+
+.page-btn.active {
+  background: linear-gradient(90deg, rgba(70, 7, 78, 1), rgba(25, 123, 208, 0.8));
+  color: white;
+  font-weight: 400;
+}
+
+.page-btn.prev,
+.page-btn.next {
+  background: none;
+  font-size: 20px;
+  color: #666;
+  width: 30px;
+  height: 30px;
+}
+
+.page-btn.prev:hover,
+.page-btn.next:hover {
+  color: #000;
+}
+
+.section-divider1 {
+  border: none;
+  border-top: 1px solid #6b6464;
+  margin: 45px auto;
+  width: 99%;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #444;
+}
+
+.contact-section h2 {
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #4A4A4A;
+}
+
+.contact-section h4 {
+  font-weight: 500;
+  color: #4A4A4A;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-weight: 400;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, rgba(70, 7, 78, 0.8) 0%, rgba(25, 123, 208, 0.8) 80%);
+  color: #FFFFFF;
+  padding: 9px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  padding: 8px 50px;
+  height: 45px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+}
