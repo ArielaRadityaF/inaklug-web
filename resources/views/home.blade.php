@@ -122,8 +122,8 @@
   </p>
 
   <div class="contact-buttons">
-    <a href="#" class="btn-gradient">LOKASI KAMI</a>
-    <a href="#" class="btn-outline">KIRIM PESAN</a>
+    <a href="/hubungikami" class="btn-gradient">LOKASI KAMI</a>
+    <a href="/hubungikami" class="btn-outline">KIRIM PESAN</a>
   </div>
 </section>
 

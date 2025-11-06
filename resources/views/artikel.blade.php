@@ -98,8 +98,8 @@
   </p>
 
   <div class="contact-buttons">
-    <a href="#" class="btn-gradient">LOKASI KAMI</a>
-    <a href="#" class="btn-outline">KIRIM PESAN</a>
+    <a href="{{ url('/hubungikami#lokasi-section') }}" class="btn-gradient">LOKASI KAMI</a>
+    <a href="{{ url('/hubungikami') }}" class="btn-outline">KIRIM PESAN</a>
   </div>
 </section>
 
